@@ -1,0 +1,39 @@
+* C:\users\nils\Desktop\Projects\Elektronik\LED Strip\LED-Strip.asc
+V1 N001 0 20
+D4 N012 N017 LED_Blau
+D1 N017 N022 LED_Blau
+D2 N002 N007 LED_Blau
+D3 N007 N012 LED_Blau
+D5 N022 0 LED_Blau
+R1 N001 N002 {Rvor}
+D6 N013 N018 LED_Blau
+D7 N018 N023 LED_Blau
+D8 N003 N008 LED_Blau
+D9 N008 N013 LED_Blau
+D10 N023 0 LED_Blau
+R2 N001 N003 {Rvor}
+D11 N014 N019 LED_Blau
+D12 N019 N024 LED_Blau
+D13 N004 N009 LED_Blau
+D14 N009 N014 LED_Blau
+D15 N024 0 LED_Blau
+R3 N001 N004 {Rvor}
+D16 N015 N020 LED_Blau
+D17 N020 N025 LED_Blau
+D18 N005 N010 LED_Blau
+D19 N010 N015 LED_Blau
+D20 N025 0 LED_Blau
+R4 N001 N005 {Rvor}
+D21 N016 N021 LED_Blau
+D22 N021 N026 LED_Blau
+D23 N006 N011 LED_Blau
+D24 N011 N016 LED_Blau
+D25 N026 0 LED_Blau
+R5 N001 N006 {Rvor}
+.model D D
+.lib Z:\home\nils\.wine\drive_c\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.dio
+.include LED.mod
+.tran 1
+.param Rvor=200
+.backanno
+.end
